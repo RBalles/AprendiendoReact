@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App () {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <article className='tw-followCard'>
+      <header className='tw-followCard-header'> 
+        <img className='tw-followCard-avatar' src="https://this-person-does-not-exist.com/img/avatar-gen648c05f4c576887e2b1b626de498a12b.jpg" alt="El Avatar " />
+        <div className='tw-followCard-info'>
+          <strong>
+            Francisca Merino
+          </strong>
+          <span className='tw-followCard-infoUserName'>@franmer</span>
+        </div>
+      </header>
+
+      <aside>
+        <button className='tw-followCard-button'>
+          Seguir
         </button>
-        <p>
-          Hola
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </aside>
+    </article>
   )
 }
-
-export default App
