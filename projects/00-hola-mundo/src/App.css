@@ -3,6 +3,13 @@
   align-items: center;
   color: #fff;
   font-size: .8;
+  justify-content: space-between;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .tw-followCard-header {
@@ -27,8 +34,19 @@
 }
 .tw-followCard-button {
   margin-left: 16px;
-  border: 0;
+  border: 1px solid #000;
   border-radius: 999px;
   padding: 6px 16px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.tw-followCard-button:hover {
+  background-color: #09f;
+  transition: .3s ease all;
+  color: white;
+}
+
+.tw-followCard-button.is-following {
+  border: 1px solid red;
 }
